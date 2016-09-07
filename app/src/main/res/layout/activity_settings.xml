@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Switch to Time reminder"
+        android:layout_weight="1"
+        style="?android:attr/borderlessButtonStyle"
+        android:onClick="switchView"/>
+
+    <ListView
+        android:id="@+id/settings_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="9"/>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:layout_weight="1"
+            style="?android:attr/borderlessButtonStyle"
+            android:onClick="goBack"/>
+        <Button android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            android:layout_weight="1"
+            style="?android:attr/borderlessButtonStyle"
+            android:onClick="saveAndGoBack"/>
+    </LinearLayout>
+
+
+</LinearLayout>

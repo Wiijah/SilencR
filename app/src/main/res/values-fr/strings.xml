@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="button_send"> Envoyer! </string>
+    <string name="edit_message">Votre texte</string>
+    <string name="app_name">Locations</string>
+    <string name="title_hint">Titre</string>
+    <string name="settings_tag">Paramètres</string>
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:hint="Title"/>
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/map"
+    android:layout_height="match_parent"
+    android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_weight="1"
+    class="com.google.android.gms.maps.SupportMapFragment"
+    map:mapType="normal"
+    map:uiCompass="false"
+    map:uiRotateGestures="true"
+    map:uiScrollGestures="true"
+    map:uiTiltGestures="true"
+    map:uiZoomControls="false"
+    map:uiZoomGestures="true"
+    />
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/radius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Radius in meter (min: 100 max: 1000)"
+        android:textSize="17dp"
+        android:inputType="number"
+        android:layout_weight="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Display"
+            android:onClick="display"
+            style="?android:attr/borderlessButtonStyle"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:onClick="save"
+        style="?android:attr/borderlessButtonStyle"
+        />
+</LinearLayout>

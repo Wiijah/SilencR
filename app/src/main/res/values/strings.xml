@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="button_send"> Send! </string>
+    <string name="edit_message">Your text</string>
+    <string name="app_name">SilencR</string>
+    <string name="title_hint">Title</string>
+    <string name="settings_tag">Settings</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+</resources>
